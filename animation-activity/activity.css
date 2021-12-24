@@ -9,6 +9,8 @@
   animation-name: middle;
   animation-duration: .1s;
   animation-fill-mode: forwards;
+  
+  
 }
 
 .hamburger:hover > div:nth-child(3){
@@ -26,18 +28,19 @@ nav {
 .hamburger:hover ~ nav {
   opacity: 1;
 }
-
+/* I am definetly having trouble on this one. I got the middle bar to disappear.
+  However I am still having troubles with the top and bottom lines on the hamburger.
+  Documenation confused me more on this one. Thank you Eric for helping me with the "translate()"*/
 @keyframes top {
-  from {}
-  to {}
+  from {transform: rotate(0deg); transform: translateY(0px);}
+  to {transform: rotate(45deg) translateY(24px) translateX(24px);}
 }
-
 @keyframes middle {
-  from {}
-  to {}
+  from {opacity: 1;}
+  to {opacity: 0;}
 }
 
 @keyframes bottom {
-  from {}
-  to {}
+  from {transform: rotate(0deg); transform: translateY(0px);}
+  to {transform: rotate(-45deg) translateY(-24px) translateX(24px);}
 }

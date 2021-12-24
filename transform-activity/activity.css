@@ -1,3 +1,10 @@
 main {
+    transform: rotate(-13deg);
 
 }
+
+.info {
+    transform: skewy(-13deg);
+}
+
+/* this one was easy but i would still like to expand the wodth to fit a full screen. */
